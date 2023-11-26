@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lit Demo</title>
+    <script type="module" src="./dist/reservation-status-bar.bundled.js">
+    </script>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+	<td style="width: 10%">billiard</td>
+	<td>
+	  <reservation-status-bar start="2023-11-13 09:00:00" finish="2023-11-13 19:00:00">
+	    <reservation-status-bar-item item_start="2023-11-13 09:30:00" item_finish="2023-11-13 18:30:00" custom_style='{"background-color":"#F0DBAF"}'></reservation-status-bar-item>
+	    <reservation-status-bar-item item_start="2023-11-13 10:00:00" item_finish="2023-11-13 10:30:00"  custom_style='{"background-color":"#DC8686"}'></reservation-status-bar-item>
+	    <reservation-status-bar-item item_start="2023-11-13 11:00:00" item_finish="2023-11-13 13:00:00" note_comment="user: john
+with: taro
+mail: taro@example.com" title="reserved" custom_style='{"background-color":"#DC8686"}'></reservation-status-bar-item>
+	  </reservation-status-bar>
+	</td>
+      </tr>
+    </table>
+  </body>
+</html>
